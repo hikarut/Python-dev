@@ -6,12 +6,12 @@ $ docker-compose up -d --build
 
 * FastAPIのインストール
 ```
-$ docker exec -it python3 pip install fastapi uvicorn
+$ docker-compose exec python3 pip install fastapi uvicorn
 ```
 
 * FastAPIを実行
 ```
-$ docker exec -it python3 zsh -c "cd src && uvicorn main:app --host 0.0.0.0 --reload"
+$ docker-compose exec python3 zsh -c "cd src && uvicorn main:app --host 0.0.0.0 --reload"
 ```
 
 * 以下URLにアクセス
